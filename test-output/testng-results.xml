@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-03T17:01:30 EST" name="Default suite" finished-at="2025-03-03T17:01:57 EST" duration-ms="26495">
+    <groups>
+    </groups>
+    <test started-at="2025-03-03T17:01:30 EST" name="Default test" finished-at="2025-03-03T17:01:57 EST" duration-ms="26495">
+      <class name="testclasses.TC001_Login_page">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testclasses.TC001_Login_page@66153688]" started-at="2025-03-03T17:01:30 EST" name="setup" finished-at="2025-03-03T17:01:35 EST" duration-ms="4710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="loadRunnableTest()[pri:0, instance:testclasses.TC001_Login_page@66153688]" started-at="2025-03-03T17:01:35 EST" name="loadRunnableTest" finished-at="2025-03-03T17:01:35 EST" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadRunnableTest -->
+        <test-method signature="validateLogin()[pri:0, instance:testclasses.TC001_Login_page@66153688]" started-at="2025-03-03T17:01:35 EST" name="validateLogin" finished-at="2025-03-03T17:01:57 EST" duration-ms="21337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testclasses.TC001_Login_page@66153688]" started-at="2025-03-03T17:01:57 EST" name="tearDown" finished-at="2025-03-03T17:01:57 EST" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testclasses.TC001_Login_page -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
