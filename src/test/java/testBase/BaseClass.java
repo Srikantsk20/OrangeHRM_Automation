@@ -26,20 +26,22 @@ public class BaseClass {
 	public static WebDriver driver;
 	public Properties properties;
 	
-		@BeforeTest
-		public void setup() throws IOException
+		@BeforeTest		public void setup() throws IOException
 		{
-			FileReader file = new FileReader("./src//test//java//runnerFiles//config.propeties");
+			FileReader file = new FileReader(System.getProperty("user.dir") +"/src/test/resources/runnerFiles/config.propeties");
 			properties = new Properties();
 			properties.load(file);
+			file.close();		
 			driver = new ChromeDriver();
-			driver.get(properties.getProperty("appURL"));
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(12));
+			driver.get(properties.getProperty("appURL"));			
+//			driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 			driver.manage().window().maximize();
+
 		}
 		
 		@AfterTest
-		public void tearDown()
+		public static void tearDown()
 		{
 			driver.quit();
 			System.out.println("Happy Testing......");
