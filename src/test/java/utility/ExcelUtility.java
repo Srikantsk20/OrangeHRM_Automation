@@ -28,7 +28,7 @@ public class ExcelUtility {
 		List<String> runnableTests = new ArrayList<>();
 		try {
 //			FileInputStream fis = new FileInputStream("G:\\Projects\\HRM\\OrangeHRM_Automation\\src\\test\\java\\runnerFiles\\TestCases.xlsx");
-			String filePath = System.getProperty("user.dir") + "/src/test/java/runnerFiles/TestCases.xlsx";
+			String filePath = System.getProperty("user.dir") + "/src/test/resources/runnerFiles/TestCases.xlsx";
             File file = new File(filePath);
             
             if (!file.exists()) {
@@ -63,7 +63,7 @@ public class ExcelUtility {
 	//Write result to result excel file
 	    public static void writeTestResult(int testCaseID, String status) 
 	    {
-	    	String FILE_PATH = "G:\\Projects\\HRM\\OrangeHRM_Automation\\src\\test\\java\\runnerFiles\\TestCaseToExecute.xlsx";
+	    	String FILE_PATH = "G:\\Project Based Learning\\Orange_HRM\\src\\test\\resources\\runnerFiles\\TestCaseToExecute.xlsx";
 	        try 
 	        {
 	        	FileInputStream fis = new FileInputStream(FILE_PATH);

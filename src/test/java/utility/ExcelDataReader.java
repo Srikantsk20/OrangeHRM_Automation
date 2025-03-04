@@ -17,7 +17,7 @@ public class ExcelDataReader {
 	static XSSFSheet sheet;
 	static XSSFRow row;
 	static XSSFCell col;
-	private static final String filePath = "G:\\Projects\\HRM\\OrangeHRM_Automation\\src\\test\\java\\runnerFiles\\DefaultTestData.xlsx";
+	private static final String filePath = "G:\\Project Based Learning\\Orange_HRM\\src\\test\\resources\\runnerFiles\\DefaultTestData.xlsx";
 	
 	public static String[][] getLoginData()
 	{
